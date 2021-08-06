@@ -1,8 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
-MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bogus.Premium.Test", "Bogus.Premium.Test.csproj", "{2FF73A0F-620F-45C1-8CFC-CE584750BB12}"
 EndProject
 Global
