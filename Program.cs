@@ -5,28 +5,25 @@ using static System.Console;
 
 namespace Bogus.Premium.Test
 {
-    class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             WriteLine("Hello Bogus Premium!");
 
             var userFaker = new Faker<User>()
                .RuleFor(u => u.FirstName, f => f.Person.FirstName)
-               .RuleFor(u => u.PainArea, f => f.Human().BodyPartInternal());
+               .RuleFor(u => u.PainArea, f => f.Human().BodyPartInternal())
+               .RuleFor(u => u.LastName, f => f.Person.LastName)
+               .RuleFor(u => u.Age, f => f.Random.Int(1, 100));
 
-            var user = userFaker.Generate();
+            for (var i = 0; i < 200; i++)
+            {
+                var user = userFaker.Generate();
 
-            var json = JsonConvert.SerializeObject(user);
-            WriteLine(json);
+                var json = JsonConvert.SerializeObject(user);
+                WriteLine(json);
+            }
         }
-    }
-
-    public class User
-    {
-       public string FirstName { get; set; }
-       public string LastName { get; set; }
-       public int Age { get; set; }
-       public string PainArea { get; set; }
     }
 }
