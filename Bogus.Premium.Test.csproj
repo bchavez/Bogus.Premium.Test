@@ -6,13 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Bogus" Version="34.0.1" />
-    <PackageReference Include="Bogus.Healthcare" Version="34.0.1" />
-    <PackageReference Include="Bogus.Tools.Analyzer" Version="34.0.1">
+    <PackageReference Include="Bogus" Version="35.3.2" />
+    <PackageReference Include="Bogus.Healthcare" Version="35.3.2" />
+    <PackageReference Include="Bogus.Tools.Analyzer" Version="35.3.2">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>
